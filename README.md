@@ -15,6 +15,25 @@ Lazy Load Images
 ```
 
 ```
+Load CSS Async:
+
+<link rel="stylesheet" href="nonCritical.css" onload="this.media='all'" media="print" />
+<link rel="stylesheet" href="critical.css" /> // default: media="all"
+
+when media sets to print, media is set for other purpose. It loads async. onload is triggered media to all, now after loading style can be applied after things are ready.
+
+Other ways to load css async via js
+
+<link rel="preload" as="style" href="style.css" />
+
+order:
+style.css
+critical.css
+nonCritical.css
+
+```
+
+```
 Preload Prefetch Preconnect
 
 <script src="style.css" /> Priority: Highest
@@ -42,10 +61,27 @@ we need to be sure that user will visit them. Lowest priority. Other page.
 On step 1 we prefetc for step 2, on step 2 we preftech for step 3
 
 
-<link rel="preconnect" as="script" href="script.js" />
-<link rel="preconnect" as="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://abc.com" />
 
 loading content from other domain. cdn firebase
 at some pt we need to fetch assets.
 connection takes some ms. We can make the call beforehand. handshake
 ```
+
+```
+Progressive Images:
+```
+
+```
+
+```
+
+```
+Responsive Images:
+```
+
+```
+
+```
+
+
