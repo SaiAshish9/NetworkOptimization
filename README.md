@@ -68,20 +68,4 @@ at some pt we need to fetch assets.
 connection takes some ms. We can make the call beforehand. handshake
 ```
 
-```
-Progressive Images:
-```
-
-```
-
-```
-
-```
-Responsive Images:
-```
-
-```
-
-```
-
 
