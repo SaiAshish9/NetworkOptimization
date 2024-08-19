@@ -17,22 +17,35 @@ Lazy Load Images
 ```
 Preload Prefetch Preconnect
 
+<script src="style.css" /> Priority: Highest
+<html>
+</html>
+<script src="script.js" /> Priority: High
+Network Tab
+View Waterfall as well to see the way files are loaded
 
-<script src="script.js" />
 
 <link rel="preload" as="script" href="script.js" />
-<link rel="preload" as="stylesheet" href="style.css" />
+<link rel="preload" as="style" href="style.css" />
+<script src="style.css" />
+<html>
+</html>
+<script src="style.js" /> If we don't consume here warning will be thrown at console.
+these two will be loaded first than other scripts and styles. These are critical and we want these files asap. Spotify benefited a lot.
 
 
-
+<link rel="prefetch"" href="script.html" />
 <link rel="prefetch" as="script" href="script.js" />
 <link rel="prefetch" as="stylesheet" href="style.css" />
 
+we need to be sure that user will visit them. Lowest priority. Other page.
+On step 1 we prefetc for step 2, on step 2 we preftech for step 3
 
 
 <link rel="preconnect" as="script" href="script.js" />
 <link rel="preconnect" as="stylesheet" href="style.css" />
 
-
-
+loading content from other domain. cdn firebase
+at some pt we need to fetch assets.
+connection takes some ms. We can make the call beforehand. handshake
 ```
