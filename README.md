@@ -17,5 +17,19 @@ Lazy Load Images
 ```
 Preload Prefetch Preconnect
 
+<link rel="preload" as="script" href="script.js" />
+<link rel="preload" as="stylesheet" href="style.css" />
+
+
+
+<link rel="prefetch" as="script" href="script.js" />
+<link rel="prefetch" as="stylesheet" href="style.css" />
+
+
+
+<link rel="preconnect" as="script" href="script.js" />
+<link rel="preconnect" as="stylesheet" href="style.css" />
+
+
 
 ```
